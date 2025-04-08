@@ -29,3 +29,14 @@ I recommend SDKMAN! which makes this as simple as:
 5. [Local Swagger](http://localhost:8585/swagger-ui/index.html#)
 
 ![img.png](images/img.png)
+
+### Challenge
+
+The current API version provides 2 endpoints for event search. The challenge is to create a third endpoint that provides both external and internal events in the same structure.
+
+This new feature must meet the following criteria:
+
+- The new feature should only return an error when the experience does not exist.
+- The new feature must follow the ordering by Event::startTime.
+- The new feature must be resilient in case of external integration failure.
+- The new feature should be as optimized as possible.
