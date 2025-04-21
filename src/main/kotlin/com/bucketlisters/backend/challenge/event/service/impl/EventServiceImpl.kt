@@ -3,7 +3,6 @@ package com.bucketlisters.backend.challenge.event.service.impl
 import com.bucketlisters.backend.challenge.event.repository.EventRepository
 import com.bucketlisters.backend.challenge.event.resource.response.EventsPageResponse
 import com.bucketlisters.backend.challenge.event.service.EventService
-import com.bucketlisters.backend.challenge.eventTicketType.repository.EventTicketTypeRepository
 import com.bucketlisters.backend.challenge.experience.service.ExperienceService
 import com.bucketlisters.backend.challenge.integration.BlipFeignClient
 import com.bucketlisters.backend.challenge.integration.request.ExternalEventFilter
@@ -19,7 +18,6 @@ import org.springframework.transaction.annotation.Transactional
 @Service
 data class EventServiceImpl(
     private val eventRepository: EventRepository,
-    private val eventTicketTypeRepository: EventTicketTypeRepository,
     private val experienceService: ExperienceService,
     private val externalClient: BlipFeignClient,
 ) : EventService {
