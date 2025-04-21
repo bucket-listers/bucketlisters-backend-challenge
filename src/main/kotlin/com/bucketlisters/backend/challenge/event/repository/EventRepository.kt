@@ -12,7 +12,7 @@ interface EventRepository :
     CrudRepository<EventEntity, Long>, PagingAndSortingRepository<EventEntity, Long> {
 
     @Query(
-        "SELECT e FROM event e LEFT JOIN FETCH e.eventTicketTypes ett WHERE e.experience.experienceId = :experienceId AND e.startTime BETWEEN :minDate AND :maxDate"
+        "SELECT e FROM event e WHERE e.experience.experienceId = :experienceId AND e.startTime BETWEEN :minDate AND :maxDate"
     )
     fun findAllByExperienceExperienceId(
         @Param("experienceId") experienceId: Long,

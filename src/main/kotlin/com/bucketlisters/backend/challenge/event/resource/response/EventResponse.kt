@@ -7,5 +7,4 @@ data class EventResponse(
     val name: String,
     val startTime: ZonedDateTime,
     val endTime: ZonedDateTime,
-    val eventTicketTypes: List<EventTicketTypeResponse> = listOf(),
 )

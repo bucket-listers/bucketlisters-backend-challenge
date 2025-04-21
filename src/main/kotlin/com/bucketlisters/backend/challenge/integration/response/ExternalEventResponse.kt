@@ -8,7 +8,6 @@ data class ExternalEventResponse(
     val name: String,
     val startTime: ZonedDateTime,
     val endTime: ZonedDateTime,
-    val eventTicketTypes: List<ExternalEventTicketType> = listOf(),
 ) {
 
     fun toResponse(): EventResponse {
@@ -17,7 +16,6 @@ data class ExternalEventResponse(
             name = this.name,
             startTime = this.startTime,
             endTime = this.endTime,
-            eventTicketTypes = this.eventTicketTypes.map { it.toResponse() },
         )
     }
 }

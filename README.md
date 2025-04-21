@@ -1,7 +1,7 @@
 # bucketlisters-backend-challenge
 
-This challenge is a simplified replica of a ticket management platform, designed to consume and list tickets from both our internal database and external APIs. <br> 
-With this approach, we aim to simulate a realistic data integration scenario, allowing for efficient and scalable manipulation and display of ticket information.
+This challenge is a simplified replica of a ticket management platform, designed to consume and list events from both our internal database and external APIs. <br> 
+With this approach, we aim to simulate a realistic data integration scenario, allowing for efficient and scalable manipulation and display of event information.
 
 ## API Domain
 
@@ -10,9 +10,6 @@ An experience is a set of events belonging to the same partner, consisting of re
 
 ### Event
 An Event takes place at a specific single. Other systems may refer to this as “time slot”. An Event is always associated with an Experience.
-
-### Event Ticket Type
-A type of ticket that a user may purchase to a specific Event.  It has a name and price and some other data attached to it.  Note that an Event Ticket Type is associated with only one Event, meaning that each Event must define its own Event Ticket Types, even if the same template applies to many Events
 
 ## Environment Setup
 1. Install Java 17 or Higher.<br>
